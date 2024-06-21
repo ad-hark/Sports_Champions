@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports History</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/roman-colosseum.jpg');
+      background-size: cover;
+      background-position: justify;
+      color: white;
+    }
+    
+    .header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .button {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* UGA Bulldogs */
+    .button-uga {
+        background-color: #BA0C2F; /* UGA Bulldogs color */
+    }
+    
+    /* Boston Celtics */
+    .button-celtics {
+        background-color: #007A33; /* Boston Celtics color */
+    }
+    
+    /* Atlanta Braves */
+    .button-braves {
+        background-color: #13274F; /* Atlanta Braves color */
+    }
+    
+    /* Chelsea FC */
+    .button-chelsea {
+        background-color: #034694; /* Chelsea FC color */
+    }
+
+    .button:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">Sports History</div>
+    <div class="button-container">
+      <!-- UGA Bulldogs Football Button -->
+      <button class="button button-uga" onclick="window.location.href='football.html'">
+        NCAA Football Champions
+      </button>
+      
+      <!-- Boston Celtics Basketball Button -->
+      <button class="button button-celtics" onclick="window.location.href='basketball.html'">
+        NBA Champions History
+      </button>
+      
+      <!-- Atlanta Braves Baseball Button -->
+      <button class="button button-braves" onclick="window.location.href='baseball.html'">
+        MLB Champions History
+      </button>
+      
+      <!-- Chelsea FC Soccer Button -->
+      <button class="button button-chelsea" onclick="window.location.href='soccer.html'">
+        EPL Champions History
+      </button>
+    </div>
+  </div>
+</body>
+</html>
